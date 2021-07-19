@@ -1,0 +1,17 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: security
+  profiles:
+    active: dev
+
+#注册中心配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka
+
+logging:
+  logPath: F:\project\git\springCloud\security\target\logs
+  config: classpath:logback/logback-dev.xml

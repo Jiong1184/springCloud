@@ -1,0 +1,15 @@
+server:
+  port: 8000
+
+spring:
+  application:
+    name: register-eureka
+eureka:
+    client:
+      register-with-eureka: false
+      fetch-registry: false
+
+logging:
+  logPath: F:\project\git\springCloud\register\target\logs
+  config: classpath:logback/logback-dev.xml
+

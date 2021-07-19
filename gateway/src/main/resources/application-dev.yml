@@ -1,0 +1,15 @@
+
+spring:
+  application:
+    name: gateway
+  config:
+    activate:
+      on-profile: dev
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+
+logging:
+  logPath: F:\project\git\springCloud\gateway\target\logs
+  config: classpath:logback/logback-dev.xml
